@@ -30,13 +30,23 @@ header {
     z-index: 1000;
 }
 
-#conteiner_do_logo {
+.conteiner_do_logo {
     width: fit-content;
     height: fit-content;
     min-width: 5vw;
     margin-left: 1vw;
     margin-top: 1vh;
     margin-bottom: 1vh;
+}
+
+.icone_home{
+    width: 40px;
+
+}
+
+.icone_home a{
+    width: 100%;
+    height: 100%;
 }
 
 #header_nav {
@@ -64,7 +74,7 @@ header {
     height: 100%;
     pointer-events: none;
     background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(0px);
+    backdrop-filter: blur(1px);
     z-index: -1;
     transition: backdrop-filter 0.3s ease;
 }
@@ -146,7 +156,7 @@ img {
 }
 
 
-@media (max-width: 1190px) {
+@media (max-width: 1320px) {
     .menu-toggle {
         display: block;
     }
@@ -206,5 +216,13 @@ img {
     width: fit-content;
     border-radius: 25px;
     background-color: #eb0c44;
-    padding: 0.2vw;
+    padding: 0.3vw;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
+
+.overflow_rolagem{
+    overflow: scroll;
+}
+
