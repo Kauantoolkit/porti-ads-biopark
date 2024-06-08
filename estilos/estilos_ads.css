@@ -1,4 +1,10 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
+    position: relative;
     height: auto;
     min-height: 100vh;
     width: 100vw;
@@ -12,19 +18,43 @@ body {
 }
 
 header {
-    background-color: azure;
+    background-color: rgb(242, 255, 255);
     width: 100%;
     height: fit-content;
     display: flex;
     align-items: center;
     position: fixed;
+    justify-content: center;
     top: 0;
     left: 0;
+    z-index: 1000;
 }
 
-#header_nav{
-
+#conteiner_do_logo {
+    width: fit-content;
+    height: fit-content;
+    min-width: 5vw;
+    margin-left: 1vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
+
+#header_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1vw;
+}
+
+#header_nav p a {
+    margin-left: 1vw;
+    text-decoration: none;
+    color: #eb0c44;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+
 
 .blur-overlay {
     position: fixed;
@@ -32,23 +62,15 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none; 
-    background-color: rgba(255, 255, 255, 0.2); 
-    backdrop-filter: blur(0px); /* Começa sem blur */
-    z-index: -1; 
-    transition: backdrop-filter 0.3s ease; /* Transição suave */
+    pointer-events: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0px);
+    z-index: -1;
+    transition: backdrop-filter 0.3s ease;
 }
 
 .blur-overlay.active {
-    backdrop-filter: blur(10px); /* Aplica o blur gradualmente quando a classe 'active' está presente */
-}
-
-#conteiner_do_logo {
-    width: fit-content;
-    height: fit-content;
-    margin-left: 1vw;
-    margin-top: 1vh;
-    margin-bottom: 1vh;
+    backdrop-filter: blur(10px);
 }
 
 .conteiner_exterior {
@@ -61,7 +83,7 @@ header {
     background-color: whitesmoke;
     flex-direction: row;
     border-radius: 35px;
-    margin-top: 10vh;
+    margin-top: 15vh;
 }
 
 .conteiner_interior {
@@ -75,7 +97,7 @@ header {
 h1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 700;
-    color: rgb(197, 19, 156);
+    color: #eb0c44;
 }
 
 p {
@@ -85,7 +107,7 @@ p {
 }
 
 img {
-    max-width: 100%; /* Garantindo que as imagens sejam responsivas */
+    max-width: 100%;
     height: auto;
 }
 
@@ -97,4 +119,62 @@ img {
     .conteiner_interior {
         max-width: 100%;
     }
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #eb0c44;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    #header_nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(242, 255, 255);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        z-index: 2000;
+        margin-left: 0;
+    }
+
+    #header_nav.active {
+        display: flex;
+    }
+
+    #header_nav p {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    #sair {
+        display: none; 
+    }
+
+    #header_nav.active #sair {
+        display: block; 
+    }
+}
+
+
+
+.menu-item {
+    display: none;
+}
+
+#header_nav.active .menu-item {
+    display: block;
 }

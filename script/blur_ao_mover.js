@@ -12,5 +12,5 @@ window.addEventListener('scroll', function() {
     clearTimeout(blurTimeout);
     blurTimeout = setTimeout(function() {
         blurBackground.classList.remove('active');
-    },700); // Remover o blur após um curto período de tempo (66ms)
+    },400); // Remover o blur após um curto período de tempo (66ms)
 });

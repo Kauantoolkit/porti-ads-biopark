@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../porti ads biopark"
+		},
+		{
+			"path": "../porti clube"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "porti ads biopark"
+	}
+}
