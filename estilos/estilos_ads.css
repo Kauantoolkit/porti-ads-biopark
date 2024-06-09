@@ -6,8 +6,8 @@ html {
 body {
     position: relative;
     height: auto;
-    min-height: 100vh;
-    width: 100vw;
+    min-height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     background-image: url('../imagens/background.jpg');
@@ -28,6 +28,7 @@ header {
     top: 0;
     left: 0;
     z-index: 1000;
+    box-sizing: border-box;
 }
 
 .conteiner_do_logo {
@@ -89,7 +90,7 @@ header {
     min-height: 30vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
     background-color:rgb(255, 255, 255);
     flex-direction: row;
     border-radius: 35px;
@@ -101,7 +102,9 @@ header {
     margin-bottom: 2vh;
     margin-left: 2vw;
     margin-right: 2vw;
-    max-width: 35%;
+    max-width: 50%;
+    min-width: 40%;
+ 
 }
 
 h1 {
@@ -119,6 +122,15 @@ p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 400;
     color: dimgray;
+    font-size: 20px;
+}
+li{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    color: dimgray;
+    margin-bottom: 0.5vh;
+    background-color: aliceblue;
+
 }
 
 img {
@@ -136,6 +148,126 @@ img {
     margin-left: 1vw;
 }
 
+
+
+
+
+.menu-item {
+    display: none;
+}
+
+#header_nav.active .menu-item {
+    display: block;
+}
+
+.borda_arredondada{
+    border-radius: 35px;
+}
+
+
+
+.botão{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 25px;
+    background-color: #eb0c44;
+    padding: 0.3vw;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.overflow_rolagem{
+    overflow: scroll;
+}
+
+.caixa_organizadora {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 90%;
+    padding: 10px;
+    background-color: #ffffff;
+}
+
+.itens_da_caixa{
+    width: 50%;
+
+
+}
+
+.itens_da_caixa li{
+    overflow-wrap: break-word;
+}
+
+.titulo_reposicionado{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 10px;
+}
+
+.conteiner_exterior_sem_centralizar {
+    width: 90vw;
+    height: fit-content;
+    min-height: 30vh;
+    display: flex;
+    background-color:rgb(255, 255, 255);
+    border-radius: 35px;
+    margin-top: 15vh;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagem_metade{
+    width: 50%;
+    height: auto;
+
+}
+
+.conteiner_interior_centralizador {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+
+
+.pdf-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.pdf{
+    width: 20%;
+    margin: 10px;
+}
+
+.conteiner_reduzido{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    max-width: 15%;
+    min-width: 10%;
+    text-align: center;
+}
+
+.pdf a :hover{
+    opacity: 90%;
+}
+
+
+
 @media (max-width: 320px){
     h1{
         font-size: 5vw;
@@ -152,6 +284,15 @@ img {
     }
     .conteiner_interior {
         max-width: 100%;
+    }
+    .pdf-conteiner{
+        flex-direction: column;
+    }
+    .pdf{
+        width: 70%;
+    }
+    li{
+        font-size: 10px;
     }
 }
 
@@ -194,35 +335,3 @@ img {
         display: block; 
     }
 }
-
-
-
-.menu-item {
-    display: none;
-}
-
-#header_nav.active .menu-item {
-    display: block;
-}
-
-.borda_arredondada{
-    border-radius: 35px;
-}
-
-
-
-.botão{
-    height: fit-content;
-    width: fit-content;
-    border-radius: 25px;
-    background-color: #eb0c44;
-    padding: 0.3vw;
-    text-decoration: none;
-    color: #ffffff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
-
-.overflow_rolagem{
-    overflow: scroll;
-}
-
