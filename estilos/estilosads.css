@@ -370,12 +370,12 @@ video {
     
 }
 
-#titulo_videos{
+#titulo_videos {
     width: 100%;
     text-align: center;
 }
 
-#empresas-parceiras{
+#empresas-parceiras {
         width: 90vw;
         height: fit-content;
         min-height: 30vh;
@@ -390,7 +390,7 @@ video {
         padding: 10px;
 }
 
-.empresa{
+.empresa {
     min-width: 10%;
     height: auto;
     margin: 10px;
@@ -399,7 +399,7 @@ video {
 
 }
 
-#titulo_empresas-parceiras{
+#titulo_empresas-parceiras {
     width: 100%;
     text-align: center;
 }
