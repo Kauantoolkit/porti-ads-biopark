@@ -268,73 +268,6 @@ img {
 
 
 
-@media (max-width: 320px){
-    h1{
-        font-size: 5vw;
-    }
-    p{
-        font-size: 4vw;
-    }
-}
-
-@media (max-width: 860px) {
-    .conteiner_exterior {
-        flex-direction: column;
-        margin-top: 20vh;
-    }
-    .conteiner_interior {
-        max-width: 100%;
-    }
-    .pdf-conteiner{
-        flex-direction: column;
-    }
-    .pdf{
-        width: 70%;
-    }
-    li{
-        font-size: 10px;
-    }
-}
-
-
-@media (max-width: 1320px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    #header_nav {
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        background-color: rgb(242, 255, 255);
-        position: absolute;
-        top: 100%;
-        left: 0;
-        padding: 10px;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        z-index: 2000;
-        margin-left: 0;
-    }
-
-    #header_nav.active {
-        display: flex;
-    }
-
-    #header_nav p {
-        width: 100%;
-        text-align: center;
-        margin: 5px 0;
-    }
-
-    #sair {
-        display: none; 
-    }
-
-    #header_nav.active #sair {
-        display: block; 
-    }
-}
 
 
 
@@ -445,5 +378,79 @@ video {
 
 
 
+@media (max-width: 320px){
+    h1{
+        font-size: 5vw;
+    }
+    p{
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 860px) {
+    .conteiner_exterior {
+        flex-direction: column;
+        margin-top: 20vh;
+    }
+    .conteiner_interior {
+        max-width: 100%;
+    }
+    .pdf-conteiner{
+        flex-direction: column;
+    }
+    .pdf{
+        width: 70%;
+    }
+    li{
+        font-size: 10px;
+    }
+    #contatos div{
+        flex-direction: column;
+        
+    }
+    #contatos{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 1320px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    #header_nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(242, 255, 255);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        padding: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        z-index: 2000;
+        margin-left: 0;
+    }
+
+    #header_nav.active {
+        display: flex;
+    }
+
+    #header_nav p {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    #sair {
+        display: none; 
+    }
+
+    #header_nav.active #sair {
+        display: block; 
+    }
+}
 
 
