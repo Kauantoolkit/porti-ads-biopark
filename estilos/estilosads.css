@@ -404,6 +404,45 @@ video {
     text-align: center;
 }
 
+#contatos{
+    width: 90vw;
+    height: fit-content;
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-color:rgb(255, 255, 255);
+    flex-direction: column;
+    border-radius: 35px;
+    margin-top: 15vh;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+#contatos div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#contatos div div img{
+    width: 30px;
+    height: auto;
+}
+
+#contatos div div {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    border-radius: 35px;
+    margin: 10px;
+}
+
+#contatos div div h2{
+    margin: none;
+}
+
 
 
 
