@@ -375,7 +375,7 @@ video {
     text-align: center;
 }
 
-#empresas_parceiras{
+#empresas-parceiras{
         width: 90vw;
         height: fit-content;
         min-height: 30vh;
@@ -406,11 +406,5 @@ video {
 
 
 
-.container_largo{    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: auto;
-}
+
 
