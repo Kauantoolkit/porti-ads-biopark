@@ -301,14 +301,14 @@ img {
     opacity:20px;
     background-color: #f0f0f0;
     border-radius: 35px;
-    padding:10px;
+    padding:20px;
 }
 
 .contato-container p img{
     height: 20px;
 }
 
-.contato-container p, .contato-container h{
+.contato-container p, .contato-container h2{
     text-align: center;
 }
 
@@ -394,6 +394,9 @@ video {
     .menu-toggle {
         display: block;
     }
+.contato-container{
+    width: 70%;
+}
 
     #header_nav {
         display: none;
