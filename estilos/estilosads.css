@@ -271,7 +271,7 @@ img {
 
 
 
-.conteiner_exterior_videos {
+.conteiner_exterior_fit {
     width: 90vw;
     height: fit-content;
     min-height: 30vh;
@@ -290,11 +290,26 @@ img {
     max-width: 600px; 
     margin: 0 auto; 
     padding: 10px;
-    border: 2px solid #eb0c44; 
     background-color: #f0f0f0; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     border-radius: 10px; 
     margin-bottom: 20px;
+}
+
+.contato-container{
+    margin: 20px;
+    opacity:20px;
+    background-color: #f0f0f0;
+    border-radius: 35px;
+    padding:10px;
+}
+
+.contato-container p img{
+    height: 20px;
+}
+
+.contato-container p, .contato-container h{
+    text-align: center;
 }
 
 video {
@@ -335,45 +350,6 @@ video {
 #titulo-empresas-parceiras {
     width: 100%;
     text-align: center;
-}
-
-#contatos{
-    width: 90vw;
-    height: fit-content;
-    min-height: 30vh;
-    display: flex;
-    align-items: center;
-    justify-content:center;
-    background-color:rgb(255, 255, 255);
-    flex-direction: column;
-    border-radius: 35px;
-    margin-top: 15vh;
-    flex-wrap: wrap;
-    padding: 10px;
-}
-#contatos div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-#contatos div div img{
-    width: 30px;
-    height: auto;
-}
-
-#contatos div div {
-    display: flex;
-    flex-direction: column;
-    background-color: bisque;
-    border-radius: 35px;
-    margin: 10px;
-}
-
-#contatos div div h2{
-    margin: none;
 }
 
 
