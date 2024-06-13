@@ -391,12 +391,15 @@ video {
 }
 
 
-@media (max-width: 1320px) {
+@media (max-width: 1350px) {
     .menu-toggle {
         display: block;
     }
 .contato-container{
     width: 70%;
+}
+.header_nav p a{
+    font-size: 10;
 }
 
     #header_nav {
