@@ -63,6 +63,7 @@ header {
     color: #eb0c44;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 600;
+    font-size: 14px;
 }
 
 
@@ -287,8 +288,8 @@ img {
 }
 
 .video-container {
-    max-width: 600px; 
-    margin: 0 auto; 
+    max-width: 45%; 
+    margin: 0; 
     padding: 10px;
     background-color: #f0f0f0; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
