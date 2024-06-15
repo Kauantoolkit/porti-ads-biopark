@@ -10,7 +10,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-image: url('../imagens/background.jpg');
+    background-image: url('../imagens/background.png');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -341,12 +341,19 @@ video {
 
 .empresa {
     min-width: 10%;
+    max-width: 22%;
     height: auto;
     margin: 10px;
     background-color: #f0f0f0;
     border-radius: 32px;
+    margin: 20px;
+    margin-bottom: 60px;
 
 }
+.empresa a  :hover{
+    opacity: 70%;
+}
+
 
 #titulo-empresas-parceiras {
     width: 100%;
@@ -434,6 +441,13 @@ video {
     #header_nav.active #sair {
         display: block; 
     }
+}
+
+@media (max-width: 500px){
+    p{
+        font-size: 14px;
+    }
+
 }
 
 
