@@ -221,6 +221,13 @@ img {
     overflow-wrap: break-word;
 }
 
+
+#font_size_10px{
+    font-size: 20px;
+
+}
+
+
 .titulo_reposicionado{
     position: relative;
     top: 0;
@@ -587,7 +594,7 @@ video {
 }
 
 .graduah2{
-    font-size: 3vw;
+    font-size: 20px;
 }
 
 .profeh2{
