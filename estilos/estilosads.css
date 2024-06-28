@@ -584,7 +584,7 @@ video {
 
 @media (min-width: 1616px) and (max-width: 2021px) {
     .contato-container {
-        margin: 80px;
+        margin: 40%;
     }
 }
 
