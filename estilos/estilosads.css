@@ -444,6 +444,13 @@ video {
 
 
 @media (max-width: 1000px) {
+    
+    .itens_da_caixa{
+        width: 90%;
+    }
+    
+    
+    
     .conteiner_exterior {
         flex-direction: column;
         margin-top: 20vh;
